@@ -37,19 +37,38 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isMoving", true);
         }
+
+        Sprint();
     }
 
     private void FixedUpdate()
     {
+      
         Move();
+        
 
     }
 
     private void Move()
     {
+     
         rigidbody2d.linearVelocity = motionVector * speed;
+  
 
 
+    }
 
+    private void Sprint()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) == true)
+        {
+            Debug.Log($"Speed ShiftDown: {speed}");
+            speed = 4f;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift) == true)
+        {
+            Debug.Log($"Speed ShiftUp: {speed}");
+            speed = 2f;
+        }
     }
 }
