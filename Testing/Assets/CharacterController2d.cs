@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rigidbody2d;
     [SerializeField] float speed = 2f;
     Vector2 motionVector;
+    public Vector2 lastMotionVector;
     Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,9 +26,22 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        motionVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        animator.SetFloat("Horizontal", Input.GetAxisRaw("Horizontal"));
-        animator.SetFloat("Vertical", Input.GetAxisRaw("Vertical"));
+        
+        float vertical = Input.GetAxisRaw("Vertical");
+        float horizontal = Input.GetAxisRaw("Horizontal");
+
+        motionVector = new Vector2(horizontal, vertical);
+        animator.SetFloat("Horizontal", horizontal);
+        animator.SetFloat("Vertical", vertical);
+
+        if(horizontal != 0 || vertical !=0) 
+        {
+            lastMotionVector = new Vector2(horizontal,vertical).normalized;
+
+            animator.SetFloat("LastHorizontal", horizontal);
+            animator.SetFloat("LastVertical", vertical);
+        }
+
 
         if (animator.GetFloat("Horizontal") == 0 && animator.GetFloat("Vertical") == 0)
         {
@@ -41,7 +55,8 @@ public class PlayerMovement : MonoBehaviour
         Sprint();
     }
 
-    private void FixedUpdate()
+
+private void FixedUpdate()
     {
       
         Move();
