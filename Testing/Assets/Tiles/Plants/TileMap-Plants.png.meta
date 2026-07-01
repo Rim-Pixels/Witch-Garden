@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5c9c5704ec9f47243ade26e6e9377583
+guid: 136f5f2a7bf27824abc4577bf766e767
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -250,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1fcc4705a4ca154d8eda03c8b408b57
-      internalID: 690353504
+      spriteID: 878ea7d8994c1b04193c46f7cc6371ae
+      internalID: -501795808
       vertices: []
       indices: 
       edges: []
@@ -260,26 +260,26 @@ TextureImporter:
       name: TileMap-Plants_6
       rect:
         serializedVersion: 2
-        x: 224
+        x: 192
         y: 32
-        width: 32
-        height: 64
+        width: 64
+        height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.2}
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3701dae85446d7449932858954c84709
-      internalID: 356128786
+      spriteID: e5d9c8ba78f805c4585c5f0dc94556f6
+      internalID: 1504779060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap-Plants_7
+      name: TileMap-Plants_10
       rect:
         serializedVersion: 2
         x: 0
@@ -294,8 +294,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb6c8ca9db62f0843b6d6fe40789d6c1
-      internalID: -150765434
+      spriteID: 97752c83fc00d33409c1e27a5f17a7f7
+      internalID: 1206738111
       vertices: []
       indices: 
       edges: []
@@ -304,7 +304,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1c7f05fdab89cb44aa10ab9820e90f3d
+    spriteID: 3ce64db9d48653e49b55d723c6095495
     internalID: 0
     vertices: []
     indices: 
@@ -314,17 +314,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":8.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       TileMap-Plants_0: -4431882718440114051
       TileMap-Plants_1: 7458090327636866536
+      TileMap-Plants_10: 1206738111
+      TileMap-Plants_11: 1242971289
+      TileMap-Plants_12: -1389577252
       TileMap-Plants_2: -2621899784410915308
       TileMap-Plants_3: -5611471050933298576
       TileMap-Plants_4: 2202561024097238887
-      TileMap-Plants_5: 690353504
-      TileMap-Plants_6: 356128786
-      TileMap-Plants_7: -150765434
-      TileMap-Plants_8: -1688004308
+      TileMap-Plants_5: -501795808
+      TileMap-Plants_6: 1504779060
+      TileMap-Plants_7: -1807756114
+      TileMap-Plants_8: -2078759298
+      TileMap-Plants_9: 666348508
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
